@@ -3,10 +3,11 @@
   <remote  name="korg"
            fetch="git://android.git.kernel.org/"
            review="review.source.android.com" />
+  <remote name="github" fetch="git://github.com/" />
   <default revision="master"
            remote="korg" />
 
-  <project path="build" name="platform/build">
+  <project path="build" name="leshak/android_build" remote="github">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -21,12 +22,6 @@
   <project path="development" name="platform/development" />
 
   <project path="device/common" name="device/common" />
-  <project path="device/htc/common" name="device/htc/common" />
-  <project path="device/htc/dream" name="device/htc/dream" />
-  <project path="device/htc/dream-sapphire" name="device/htc/dream-sapphire" />
-  <project path="device/htc/passion" name="device/htc/passion" />
-  <project path="device/htc/passion-common" name="device/htc/passion-common" />
-  <project path="device/htc/sapphire" name="device/htc/sapphire" />
   <project path="device/sample" name="device/sample" />
 
   <project path="external/apache-http" name="platform/external/apache-http" />
@@ -176,5 +171,11 @@
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/vold" name="platform/system/vold" />
   <project path="system/wlan/ti" name="platform/system/wlan/ti" />
+
+  <project path="external/alsa-lib" name="platform/external/alsa-lib"/>
+  <project path="external/alsa-utils" name="platform/external/alsa-utils"/>
+  <project path="hardware/alsa_sound" name="platform/hardware/alsa_sound"/>
+
+  <project path="vendor/leshak" name="leshak/android_vendor_leshak" remote="github" />
 
 </manifest>
