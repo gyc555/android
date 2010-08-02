@@ -4,7 +4,7 @@
            fetch="git://android.git.kernel.org/"
            review="review.source.android.com" />
   <remote name="github" fetch="git://github.com/" />
-  <default revision="froyo"
+  <default revision="eclair"
            remote="korg" />
 
   <project path="build" name="leshak/android_build" remote="github">
