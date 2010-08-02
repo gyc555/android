@@ -7,8 +7,8 @@
   <default revision="eclair"
            remote="korg" />
 
-  <project path="build" name="leshak/android_build" remote="github">
-    <copyfile src="core/root.mk" dest="Makefile" />
+  <project path="build" name="platform/build">
+       <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
   <project path="bionic" name="platform/bionic" />
